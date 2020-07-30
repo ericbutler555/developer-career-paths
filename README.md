@@ -176,8 +176,8 @@ Augmented reality and virtual reality. I know very little about this, but Google
 - [ARCore](https://developers.google.com/ar) by Google
 - [ARKit](https://developer.apple.com/augmented-reality/) by Apple
 - [Oculus](https://developer.oculus.com/) owned by Facebook
-- [A-frame](https://aframe.io/) 3D for web
-- [three js](https://threejs.org/) 3D for web
+- [three.js](https://threejs.org/) - 3D
+- [A-frame](https://aframe.io/) - 3D
 
 
 ## Software Engineer
@@ -199,6 +199,7 @@ Developers don't all work on websites. Installed computer programs like Adobe Ph
 Honestly pretty far outside my comfort zone but these are definitely hurtling forward in very significant ways. Think of anything from improving voice recognition on Alexa devices to improving algorithms that recognize warning signs of cancer on a CT scan.
 
 - Math-heavy
+- Significant social impact
 - Algorithms
 - Data structures
 - "Big Data"
@@ -253,9 +254,9 @@ Code has to live somewhere, like a server. There's a bunch of stuff to do to set
 
 ## Network Engineer
 
-Work in an office environment or even decentralized setting where a group of people/computers share access to a common network.
+Works in an office environment or even decentralized setting to allow a group of people/computers to share access to a common network and keep others out.
 
-- LAN (local area network)
+- LAN (local area networks)
 - VPNs
 - Intranet systems
 - DNS
@@ -266,10 +267,15 @@ Work in an office environment or even decentralized setting where a group of peo
 
 ## DevOps Engineer
 
-Facilitates code releases to minimize downtime, bugs/errors, and human effort - through planning, establishing processes, and setting up software (and hardware) built for that purpose. DevOps continues to be a more common and more highly-valued part of the development process, especially at bigger companies that have complex codebases and various projects all happening concurrently.
+Facilitates code releases to minimize site downtime, deployment bugs/errors, and human effort through planning, establishing processes, and setting up software (and hardware) built for that purpose. DevOps continues to be a more common and more highly-valued part of the development process, especially at bigger companies that have complex codebases and various projects all happening concurrently.
 
 - CI/CD (continuous integration/continuous deployment)
 - Mirrored environments for development, staging, production
 - Blue-green deployment
 - Automation
 - Monitoring
+
+
+## Business Analyst (BA)
+
+## QA (Quality Assurance) Tester
