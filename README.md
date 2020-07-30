@@ -37,7 +37,7 @@ Would focus on and be expected to have decent knowledge of:
   - DOM manipulation
   - Fundamentals: objects, arrays, functions, selectors, loops, conditions
   - [jQuery](https://api.jquery.com/) - still very widely used despite not being "best-practice" anymore
-  - API usage and client-side AJAX: jQuery, [Axios](https://github.com/axios/axios), fetch, JSON parsing
+  - API usage and client-side AJAX: [jQuery](https://api.jquery.com/jQuery.ajax/), [Axios](https://github.com/axios/axios), fetch, JSON parsing
   - Cookies and localStorage
   - Front-end security: CORS, XSS, CSRF
 - General:
