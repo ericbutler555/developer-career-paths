@@ -9,14 +9,14 @@ Two major forks here: **front-end** or **back-end.** Either can be all-encompass
 
 Personal opinion is that the industry has been steadily pushing more traditionally "back-end" things to the front-end: client-side web frameworks, serverless functions, cloud databases/APIs, static site generators (JAMstack) -- so front-end is getting harder/wider. This might plateau or reverse but who knows.
 
-You are said to be "full-stack" if you are *regularly* responsible for handling both the browser-rendered (front-end) and server-processed (back-end) code of a website. Just having to do something on the front-end or back-end occasionally to finish the thing you're building on the other end doesn't (in my opinion) qualify as full-stack, but whatever.
+You are said to be "full-stack" if you are *regularly* responsible for handling both the browser-rendered (front-end) and server-processed (back-end) code of a website.
 
 
 ### Front-end:
 
-Two types of front-end: presentational (how it looks) and functional (what it can do). *Note these are my terms, not official ones.* A marketing site for a restaurant is mostly presentational (nice-looking, SEO-friendly and easy to read/navigate across devices); their online ordering system is mostly functional (lots of data manipulation adding items to an order, presenting options, handling customer info and payment, etc). Notice that most restaurant sites bounce to another domain to handle online ordering: different developers, different focus.
+Two types of front-end: **presentational** (how it looks) and **functional** (what it can do). *Note these are my terms, not widely-used ones.* A marketing site for a restaurant is mostly presentational (nice-looking, SEO-friendly and easy to read/navigate across devices); their online ordering system is mostly functional (lots of data manipulation adding items to an order, presenting options, handling customer info and payment, etc). Notice that most restaurant sites bounce to another domain to handle online ordering: different developers, different focus.
 
-Lots of places expect that a front-end developer can handle both types, but they are very different skill-sets, primarily how well you know design/CSS vs. data/JS. Bigger/more tech-based companies might split these into different jobs.
+Employers might expect that a front-end developer can handle both types, but they are quite different skill-sets, mainly how well you know and focus on design/CSS vs. data/JS. Bigger/more tech-based companies might split these into different jobs.
 
 
 #### Front-end Presentation: HTML, CSS, Design
@@ -25,32 +25,34 @@ Would focus on and be expected to have decent knowledge of:
 
 - HTML:
   - Semantic markup
-  - Accessibility
+  - Accessibility: [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/glance/)
   - Search engine optimization (SEO)
 - CSS:
   - Advanced layout: position, display, float, flex, grid
-  - Advanced responsive design: media queries, scaling, collapsible and off-canvas patterns
-  - CSS preprocessors: [Sass](https://sass-lang.com/), [Less](http://lesscss.org/), [PostCSS](https://postcss.org/)
-  - CSS frameworks: [Bootstrap](https://getbootstrap.com/), [Tailwind](https://tailwindcss.com/), [Foundation](https://get.foundation/sites.html), [Bulma](https://bulma.io/), [Semantic UI](https://semantic-ui.com/), [Materialize](https://materializecss.com/)
-  - CSS organization: DRY principles, [BEM](http://getbem.com/introduction/), [SMACSS](http://smacss.com/)
+  - Advanced responsive design: media queries, scaling, patterns for collapsible and off-canvas content
+  - CSS preprocessors: [Sass](https://sass-lang.com/) (most common), [Less](http://lesscss.org/) (fading fast), [PostCSS](https://postcss.org/) (uses JS)
+  - CSS frameworks: [Bootstrap](https://getbootstrap.com/) (most common), [Tailwind](https://tailwindcss.com/) (new and hot), [Foundation](https://get.foundation/sites.html), [Bulma](https://bulma.io/), [Semantic UI](https://semantic-ui.com/), [Materialize](https://materializecss.com/)
+  - CSS organization: DRY principles, [BEM](http://getbem.com/introduction/), [SMACSS](http://smacss.com/) - more of a nice-to-know than full adoption, CSS strategy is all over the place from shop to shop
 - JS:
-  - DOM manipulation
-  - Fundamentals: objects, arrays, functions, selectors, loops, conditions
+  - DOM manipulation: selecting, changing, adding/hiding/showing content upon user interaction
+  - JS fundamentals: objects, arrays, functions, selectors, loops, conditions
   - [jQuery](https://api.jquery.com/) - still very widely used despite not being "best-practice" anymore
   - API usage and client-side AJAX: [jQuery](https://api.jquery.com/jQuery.ajax/), [Axios](https://github.com/axios/axios), fetch, JSON parsing
   - Cookies and localStorage
-  - Front-end security: CORS, XSS, CSRF
+  - Front-end security: CORS, XSS (cross-site scripting)
 - General:
   - Browser compatibility of CSS and JS - use [CanIUse](https://caniuse.com) as a reference
   - Page performance and optimization (Lighthouse)
   - HTML forms and client-side validation
-  - Animation with CSS and JS: [Animate.css](https://animate.style), [Greensock](https://greensock.com/)
+  - Animation with CSS and JS: [Animate.css](https://animate.style), [Greensock](https://greensock.com/), and custom-made
 - CMS development:
   - CMS "themes" are mostly just CSS and JS, with some basic programming as needed
   - [WordPress](https://developer.wordpress.org/themes/) - gigantic ecosystem
   - [Shopify](https://shopify.dev/concepts/themes) - lots of growth here in the last couple years
   - Don't bother with Drupal, Joomla, Magento, etc unless you're forced to use them
+  - [CMS usage trends](https://w3techs.com/technologies/overview/content_management)
 - Design:
+  - Design: Adobe Photoshop and Illustrator
   - Prototyping: [InVision](https://www.invisionapp.com/), [Figma](https://www.figma.com/), [Sketch](https://www.sketch.com/), [Adobe XD](https://www.adobe.com/products/xd/details.html)
   - User experience and UI design principles
 - Digital marketing:
@@ -86,7 +88,7 @@ Would focus on and be expected to have decent knowledge of:
   - [GraphQL](https://graphql.org/) - rising fast in popularity
 - Developer tools:
   - Package managers: [NPM](https://www.npmjs.com/), [Yarn](https://yarnpkg.com/getting-started)
-  - Build tools: [Webpack](https://webpack.js.org/), [Gulp](https://gulpjs.com/), [Grunt](https://gruntjs.com/)
+  - Build tools: [Webpack](https://webpack.js.org/), [Gulp](https://gulpjs.com/) (kinda fading), [Grunt](https://gruntjs.com/) (really fading)
   - Version control: [Git](https://git-scm.com/) (and using git as your deployment pipeline)
 
 
@@ -113,7 +115,7 @@ Popular back-end stuff is:
 - Database usage:
   - CRUD operations (create, read, update, and delete)
   - ORM syntax (abstracts SQL commands into code)
-  - Security: server-side form validation, SQL injection, hashing and encryption, [OWASP Top Ten](https://owasp.org/www-project-top-ten/)
+  - Security: server-side form validation, SQL injection, hashing and encryption, CSP, CSRF, [OWASP Top Ten](https://owasp.org/www-project-top-ten/)
 - Architectural concepts:
   - OOP vs. procedural/functional
   - MVC paradigm
