@@ -12,7 +12,7 @@ Personal opinion is that the industry has been steadily pushing more traditional
 You are said to be "full-stack" if you are *regularly* responsible for handling both the browser-rendered (front-end) and server-processed (back-end) code of a website.
 
 
-### Front-end:
+### Front-end
 
 Two types of front-end: **presentational** (how it looks) and **functional** (what it can do). *Note these are my terms, not widely-used ones.* A marketing site for a restaurant is mostly presentational (nice-looking, SEO-friendly and easy to read/navigate across devices); their online ordering system is mostly functional (lots of data manipulation adding items to an order, presenting options, handling customer info and payment, etc). Notice that most restaurant sites bounce to another domain to handle online ordering: different developers, different focus.
 
@@ -32,28 +32,27 @@ Would focus on and be expected to have decent knowledge of:
   - Advanced responsive design: media queries, scaling, patterns for collapsible and off-canvas content
   - CSS preprocessors: [Sass](https://sass-lang.com/) (most common), [Less](http://lesscss.org/) (fading fast), [PostCSS](https://postcss.org/) (uses JS)
   - CSS frameworks: [Bootstrap](https://getbootstrap.com/) (most common), [Tailwind](https://tailwindcss.com/) (new and hot), [Foundation](https://get.foundation/sites.html), [Bulma](https://bulma.io/), [Semantic UI](https://semantic-ui.com/), [Materialize](https://materializecss.com/)
-  - CSS organization: DRY principles, [BEM](http://getbem.com/introduction/), [SMACSS](http://smacss.com/) - more of a nice-to-know than full adoption, CSS strategy is all over the place from shop to shop
+  - CSS organization: DRY principles, [BEM](http://getbem.com/introduction/), [SMACSS](http://smacss.com/) - these are more *nice-to-know* than full adoption; CSS strategy is all over the place from shop to shop
 - JS:
   - DOM manipulation: selecting, changing, adding/hiding/showing content upon user interaction
   - JS fundamentals: objects, arrays, functions, selectors, loops, conditions
   - [jQuery](https://api.jquery.com/) - still very widely used despite not being "best-practice" anymore
   - API usage and client-side AJAX: [jQuery](https://api.jquery.com/jQuery.ajax/), [Axios](https://github.com/axios/axios), fetch, JSON parsing
   - Cookies and localStorage
-  - Front-end security: CORS, XSS (cross-site scripting)
 - General:
   - Browser compatibility of CSS and JS - use [CanIUse](https://caniuse.com) as a reference
   - Page performance and optimization (Lighthouse)
+  - Front-end security: CORS, XSS (cross-site scripting)
   - HTML forms and client-side validation
   - Animation with CSS and JS: [Animate.css](https://animate.style), [Greensock](https://greensock.com/), and custom-made
 - CMS development:
-  - CMS "themes" are mostly just CSS and JS, with some basic programming as needed
+  - CMS "themes" are mostly just HTML/CSS/JS, with some basic programming as needed
   - [WordPress](https://developer.wordpress.org/themes/) - gigantic ecosystem
   - [Shopify](https://shopify.dev/concepts/themes) - lots of growth here in the last couple years
   - Don't bother with Drupal, Joomla, Magento, etc unless you're forced to use them
   - [CMS usage trends](https://w3techs.com/technologies/overview/content_management)
 - Design:
-  - Design: Adobe Photoshop and Illustrator
-  - Prototyping: [InVision](https://www.invisionapp.com/), [Figma](https://www.figma.com/), [Sketch](https://www.sketch.com/), [Adobe XD](https://www.adobe.com/products/xd/details.html)
+  - Prototyping: [InVision](https://www.invisionapp.com/), [Figma](https://www.figma.com/), [Sketch](https://www.sketch.com/), [Adobe XD](https://www.adobe.com/products/xd/details.html), Photoshop, Illustrator
   - User experience and UI design principles
 - Digital marketing:
   - Business goals: analytics, KPIs, sales funnels, conversions
@@ -69,12 +68,12 @@ Would focus on and be expected to have decent knowledge of:
   - [React](https://reactjs.org/) - currently most popular, but requires lots of add-ons
   - [Vue](https://vuejs.org/) - leaner and many say is easier to learn
   - [Angular](https://angular.io/) (bleeds into back-end) - heavy but everything built-in
-  - [Svelte](https://svelte.dev/) - new and hot, but it's too soon to know if it'll stay relevant
+  - [Svelte](https://svelte.dev/) - new and trendy, but it's too soon to know if it'll stay relevant
   - **NOT** [AngularJS (v1)](https://angularjs.org/) - this is dead and you don't want to work on legacy projects that kept it
 - Languages:
-  - ES6 (what you're learning)
-  - [TypeScript](https://www.typescriptlang.org/) (basically JS with extra steps, can be confusing but useful)
-  - JSX (a way to render HTML in JS)
+  - ES6
+  - [TypeScript](https://www.typescriptlang.org/) - basically JS with extra steps, can be confusing but useful
+  - JSX - a way to render HTML in JS
   - probably lots more...
 - CSS abstractions:
   - *JavaScript people tend to dislike CSS so they've bent it to their own designs* 😉
@@ -84,7 +83,7 @@ Would focus on and be expected to have decent knowledge of:
   - Scoped CSS
 - State management/data layer:
   - [Redux](https://redux.js.org/) - popular but can be very complex, really only valuable for mega-complex data needs
-  - [Redis](https://redis.io/) (in-memory storage cache)
+  - [Redis](https://redis.io/) (in-memory cache)
   - [GraphQL](https://graphql.org/) - rising fast in popularity
 - Developer tools:
   - Package managers: [NPM](https://www.npmjs.com/), [Yarn](https://yarnpkg.com/getting-started)
@@ -92,34 +91,36 @@ Would focus on and be expected to have decent knowledge of:
   - Version control: [Git](https://git-scm.com/) (and using git as your deployment pipeline)
 
 
-### Back-end:
+### Back-end
 
-The scope of back-end developer roles fluctuates, but at the very least it's writing code that runs on the server and handles logic based on how the user is interacting with the site. Things like logging into your account on a site and seeing personalized information, storing info submitted through a contact form, or returning search results based on a keyword, are all website functions that require a back-end, even if it's "in the cloud" -- that just means you don't personally host the back-end, it's a back-end somewhere else.
+The scope of a back-end developer job fluctuates, but at the very least it's writing code that runs on the server and handles logic based on what the user does on the site. Things like logging into your account on a site and seeing personalized information, storing info submitted through a contact form, or returning search results based on a keyword, are all website functions that require a back-end, even if it's "in the cloud" -- that just means you don't personally host the back-end, it's a back-end maintained by other people somewhere else.
 
-Back-ends might be a little less all-over-the-place than front-end: if your company has built everything in C#, they're not readily going to switch to PHP or Python unless it's for a very contained side-project. The transition cost is typically higher than front-end. So you can focus on just ONE of these languages/frameworks and be employable.
+Back-end might be a little less all-over-the-place than front-end: if your company has built everything in C#, they're not readily going to switch to PHP or Python unless it's for a very contained side-project. The transition cost is typically higher than front-end. So you can focus on just ONE of these languages/frameworks and be employable.
 
-Popular back-end stuff is:
+Major back-end stuff is:
 
 - Programming languages:
   - [Node](https://nodejs.org/en/about/) (back-end JavaScript) - a few years ago people predicted this would unseat every back-end language. then it didn't
-  - [C#](https://docs.microsoft.com/en-us/dotnet/csharp/) - used for websites but also other types of development. not popular in small co's but preferred by many big co's. can be a steeper learning curve due to it being object-oriented and strongly-typed
+  - [C#](https://docs.microsoft.com/en-us/dotnet/csharp/) - used for websites but also other types of development. disliked by many small shops but preferred by many big companies, especially in Louisville. can be a steeper learning curve due to it being object-oriented and strongly-typed
   - [Python](https://www.python.org/) - more popular with coding bootcamps now, which may mean it'll become a top-of-mind option in a few years (note, historically for websites it's had slower performance than other languages)
   - [PHP](https://www.php.net/manual/en/) - still very widespread despite snobby attitudes about it
 - Application frameworks:
+  - Most back-end devs work within a framework, each has its own syntax and standards beyond the core language
+  - The purpose of a framework is to give structure to a website project and get common functionality out-of-the-box so you don't have to reinvent the wheel for everything
   - [ASP.NET Core](https://dotnet.microsoft.com/apps/aspnet) (uses C#)
   - [Flask](https://flask.palletsprojects.com/en/1.1.x/) and [Django](https://www.djangoproject.com/) (use Python)
   - [Express](https://expressjs.com/) (uses Node/JS)
   - [Angular](https://angular.io/) (uses JS) - Angular is the only front-end framework that you can't "drop in" to your front-end, you have to build the whole site with it
-  - [Laravel](https://laravel.com/) and [WordPress](https://developer.wordpress.org/) (use PHP) - plenty of dev careers exist entirely inside the WP ecosystem, building themes and plugins
+  - [Laravel](https://laravel.com/) and [WordPress](https://developer.wordpress.org/) (use PHP) - plenty of dev careers exist entirely inside the WP ecosystem building themes and plugins
   - [Ruby on Rails](https://rubyonrails.org/) (uses Ruby) - not as popular anymore but still good
 - Database usage:
-  - CRUD operations (create, read, update, and delete)
-  - ORM syntax (abstracts SQL commands into code)
-  - Security: server-side form validation, SQL injection, hashing and encryption, CSP, CSRF, [OWASP Top Ten](https://owasp.org/www-project-top-ten/)
+  - CRUD operations - create, read, update, and delete records
+  - ORM syntax - varies by framework, aim is to abstract SQL commands into code
+  - Security - server-side form validation, SQL injection, hashing and encryption, CSP, CSRF, [OWASP Top Ten](https://owasp.org/www-project-top-ten/)
 - Architectural concepts:
   - OOP vs. procedural/functional
   - MVC paradigm
-  - [JAMstack](https://jamstack.org/) - kind of an anti-back-end paradigm
+  - [JAMstack](https://jamstack.org/) - kind of an anti-back-end paradigm, gaining popularity esp. in smaller shops
   - SSR, CSR, SSG (server-side rendering, client-side rendering, static-site generation)
     - [Next JS](https://nextjs.org/) (built for React)
     - [Gatsby](https://www.gatsbyjs.org/) (built for React)
@@ -135,48 +136,53 @@ Popular back-end stuff is:
   - 3rd-party dependencies/packages your code is built on
 - Authentication and tokens - how to handle user accounts, permissions, and personalization
 - Background jobs - separate heavy processing tasks (like email, file editing, etc) from simple page traffic
-- Cron jobs and Task Scheduler - automate things that need to happen at a regular interval, like deleting the server cache every 24 hours or calling an API every morning at 5AM to get and store yesterday's sales figures in a database table
+- Cron jobs and Task Scheduler - automate things that need to happen at a regular interval, like deleting the server cache every 24 hours or calling an API every morning at 5AM to pull yesterday's sales figures into a database table
 - Testing: test-driven development (TDD), unit tests, integration tests - some shops go all-in on writing code tests, others don't do any
 
 
-### Mobile Developer:
+## Mobile App Developer
 
-Three paths here: iOS, Android, or hybrid. All have their own entirely separate programming languages, developer tools/coding environments, and coding paradigms. You could try more than one, but it seems like many devs are either one or the other.
+Three paths here: iOS, Android, or hybrid apps. All have their own entirely separate programming languages, developer tools/coding environments, and standards. You could try more than one, but it seems like many devs are either one or the other.
 
 Native development is ideal for maximum performance and the tightest integration with the device/operating system.
 
-Hybrid development is interesting because you can write in JavaScript or a non-native language and have it transpile automatically into (mostly) native iOS/Android code -- which should give you high performance and the ability to use native features (like integrating the phone's camera or push notifications into your app).
+Hybrid development is interesting because you can write in JavaScript or other non-native language and have it transpile automatically into (mostly) native iOS/Android code -- which should give you high performance and the ability to use native features (like integrating the phone's camera or push notifications into your app).
 
 - [Native iOS](https://developer.apple.com/documentation/): uses Swift (language) and Xcode (tool)
 - [Native Android](https://developer.android.com/): uses Kotlin (language, a variant of Java) and Android Studio (tool)
 - Hybrid or cross-platform apps:
   - [React Native](https://reactnative.dev/): integrates with React JS - very popular
   - [Flutter](https://flutter.dev/): language is called Dart - very high satisfaction rating
+  - [Xamarin](https://dotnet.microsoft.com/apps/xamarin): very popular for C#/.NET devs
   - [NativeScript](https://nativescript.org/): integrates with Vue and Angular - not quite as popular
   - [Ionic](https://ionicframework.com/): is closer to website development but produces slightly less-performant apps
 
 
-### Game Developer:
+## Game Developer
 
-World-building, strategy, decisioning (if you do x, y happens), physics (how things move), graphics, sound design and probably a bunch of other things go into game development, and video games are an absolutely huge industry. I have heard it can be hard finding stable jobs in gaming but I don't know much at all about it.
+World-building, strategy, game mechanics, decisioning (if you do x, y happens), physics (how things move), graphics, sound design and probably a bunch of other things go into game development, and video games are an absolutely huge industry. I have heard it can be hard finding stable jobs in gaming but I don't know much at all about it.
 
 - Frameworks:
   - [Unity](https://unity.com/) (uses C# and JS)
   - [Unreal Engine](https://www.unrealengine.com/en-US/) (uses C++)
+  - [Phaser](http://phaser.io/) (uses JS)
+  - there's a bunch of JS game frameworks that may be simpler
 
 
-### VR and AR Developer:
+## VR, AR, 3D Developer
 
 Augmented reality and virtual reality. I know very little about this, but Google, Apple, and Facebook are all still aggressively working on it so the ecosystem could open wide in the future.
 
 - [ARCore](https://developers.google.com/ar) by Google
 - [ARKit](https://developer.apple.com/augmented-reality/) by Apple
 - [Oculus](https://developer.oculus.com/) owned by Facebook
+- [A-frame](https://aframe.io/) 3D for web
+- [three js](https://threejs.org/) 3D for web
 
 
-### Software Engineer:
+## Software Engineer
 
-Developers don't all work on websites. Installed computer programs like Adobe Photoshop or VSCode are themselves worked on by developers. Sketch was created by a small team in the Netherlands and is now a frontrunner prototyping app. IoT devices -- wi-fi cameras, Ring doorbells, smart thermostats and even smart toothbrushes all have software both on the device itself and as part of a traditional back-end environment that the device sends data to via APIs.
+Developers don't all work on websites. Installed computer programs like Adobe Photoshop or VSCode are themselves worked on by developers. IoT devices -- wi-fi cameras, smart thermostats and even smart toothbrushes all have software both on the device itself and as part of a traditional back-end environment that the device sends data to via APIs.
 
 - Desktop applications
   - [Electron](https://www.electronjs.org/) (tool to build desktop apps using HTML, CSS and JS)
@@ -188,7 +194,7 @@ Developers don't all work on websites. Installed computer programs like Adobe Ph
   - Python
 
 
-### Data Science, Machine Learning, AI:
+## Data Science, Machine Learning, AI Engineer
 
 Honestly pretty far outside my comfort zone but these are definitely hurtling forward in very significant ways. Think of anything from improving voice recognition on Alexa devices to improving algorithms that recognize warning signs of cancer on a CT scan.
 
@@ -206,7 +212,7 @@ Honestly pretty far outside my comfort zone but these are definitely hurtling fo
   - [TensorFlow](https://www.tensorflow.org/) - machine learning
 
 
-### Database Architect (DBA):
+## Database Architect (DBA)
 
 Back-end developers *query* databases with their code, but especially in bigger companies, databases are built and maintained by dedicated database specialists.
 
@@ -224,7 +230,7 @@ Back-end developers *query* databases with their code, but especially in bigger 
   - Stored procedures, triggers, etc. (write scripts and logic to make db queries programmatically)
 
 
-### Systems Administrator:
+## Systems Administrator
 
 Code has to live somewhere, like a server. There's a bunch of stuff to do to set up a server correctly for whatever the project is.
 
@@ -245,7 +251,7 @@ Code has to live somewhere, like a server. There's a bunch of stuff to do to set
 - Command-line - SSH, Vim
 
 
-### Network Engineer:
+## Network Engineer
 
 Work in an office environment or even decentralized setting where a group of people/computers share access to a common network.
 
@@ -258,7 +264,7 @@ Work in an office environment or even decentralized setting where a group of peo
 - Redundancy and failover
 
 
-### DevOps Engineer:
+## DevOps Engineer
 
 Facilitates code releases to minimize downtime, bugs/errors, and human effort - through planning, establishing processes, and setting up software (and hardware) built for that purpose. DevOps continues to be a more common and more highly-valued part of the development process, especially at bigger companies that have complex codebases and various projects all happening concurrently.
 
